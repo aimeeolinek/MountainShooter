@@ -1,7 +1,7 @@
 import pygame
-from code.Player import Player
-from code.Enemy import Enemy
-from code.Background import Background
+from .Player import Player
+from .Enemy import Enemy
+from .Background import Background
 
 
 class EntityFactory:

@@ -1,5 +1,5 @@
 import pygame
-from code.Entity import Entity
+from .Entity import Entity
 
 class Enemy(Entity):
     def move(self):
