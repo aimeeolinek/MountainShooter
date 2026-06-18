@@ -2,7 +2,7 @@ import pygame
 from code.Player import Player
 from code.Enemy import Enemy
 from code.Background import Background
-from code.Const import WIN_WIDTH
+from code.Const import WIN_WIDTH, WIN_HEIGHT
 
 class EntityFactory:
     
@@ -14,5 +14,6 @@ class EntityFactory:
                 for i in range(7):
                     list_bg.append(Background(name=f'Level1Bg{i}', position=(0,0 )))
                     list_bg.append(Background(name=f'Level1Bg{i}', position=(WIN_WIDTH,0)))
-                    
                 return list_bg
+            case 'Player1':
+                return Player('Player1', (10, WIN_HEIGHT / 2))
